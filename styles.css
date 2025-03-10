@@ -23,6 +23,7 @@
   box-shadow: 0 2px 2px 1px gray;
   position: fixed;
   width: 100vw;
+  z-index: 99;
 }
 
 .title {
@@ -80,4 +81,36 @@
 
 .register:hover {
   background-color: #2c2c2c;
+}
+
+/* Hero Section */
+
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-container::before {
+  content: "";
+  background-image: url(./images/ServiceDesk4U\ Hero\ Image.png);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+}
+
+.welcome-title {
+  color: var(--font-color2);
+  font-size: 15rem;
+  padding: 20px 40px;
+  border-radius: 10px;
 }
