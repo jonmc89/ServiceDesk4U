@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif, serif;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 :root {
   --color1: #2a4f6e;
+  --color2: #fff;
   --font-color1: #fff;
   --font-color2: #000;
+  --font-color3: #777;
 }
 
 /* Header Section */
@@ -20,7 +23,6 @@
   align-items: center;
   background-color: var(--color1);
   padding: 10px 20px;
-  box-shadow: 0 2px 2px 1px gray;
   position: fixed;
   width: 100vw;
   z-index: 99;
@@ -113,4 +115,56 @@
   font-size: 15rem;
   padding: 20px 40px;
   border-radius: 10px;
+}
+
+/* About Section */
+
+.about-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  color: var(--font-color1);
+  text-align: left;
+  width: 100vw;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.about-card {
+  width: 85%;
+  height: 25%;
+  background-color: var(--color2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.about-card:hover {
+  background-color: #eaeaea;
+}
+
+.about-card-text {
+  width: 70%;
+  line-height: 4rem;
+}
+
+.about-card-subheader {
+  font-size: 3rem;
+}
+
+.about-card-text-content {
+  font-size: 2rem;
+  color: var(--font-color3);
 }
